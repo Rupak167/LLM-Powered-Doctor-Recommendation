@@ -61,18 +61,18 @@ if st.session_state.finished and not st.session_state.submitted:
 
             if res.status_code == 200:
                 data = res.json()
-                st.success("✅ Doctors found based on your inputs.")
+                st.success("Doctors found based on your inputs.")
 
-                st.markdown("### 💡 Doctor's Summary")
+                st.markdown("### Doctor's Summary")
                 st.write(data['llm_summary'])
             else:
-                st.error("❌ Failed to fetch results from the backend.")
+                st.error("Failed to fetch results from the backend.")
         except Exception as e:
-            st.error(f"⚠️ Error: {str(e)}")
+            st.error(f"Error: {str(e)}")
 
 # Show "Start Over" button only after submission
 if st.session_state.submitted:
-    if st.button("🔄 Start Over"):
+    if st.button("Start Over"):
         for key in ["step", "symptom", "location", "specialization", "finished", "submitted"]:
             st.session_state.pop(key, None)
         st.rerun()
