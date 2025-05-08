@@ -1,5 +1,6 @@
 # Check the FAISS Data
 ### To store the data in FAISS and check if we can search the data perfectly.
+*** mandatory step to prepare the data. ***
 ```bash
 python data_store_and_test.py
 ```
