@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "llm-powered-doctor-recommendation"
+version = "0.1.0"
+description = ""
+authors = ["Rupak167 <rupak.cseruet1102@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.11.4"
+faiss-cpu = "^1.11.0"
+environs = "^14.1.1"
+sentence-transformers = "^4.1.0"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.2"
+streamlit = "^1.45.0"
+mistralai = "^1.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
